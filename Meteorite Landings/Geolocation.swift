@@ -13,7 +13,7 @@ import Foundation
  found in a MeteoriteLanding struct (Uses Double instead of
  String).
 */
-struct Geolocation: Codable {
+struct Geolocation: Decodable {
     let type: String
     let coordinates: [Double]
 }

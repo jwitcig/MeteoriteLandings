@@ -11,7 +11,7 @@ import Foundation
 /*
  Represents a single meteorite landing.
 */
-struct MeteoriteLanding: Codable {
+struct MeteoriteLanding: Decodable {
     
     // Translating between the names of the properties on our struct
     // and the keys in the JSON under which you can find the data
