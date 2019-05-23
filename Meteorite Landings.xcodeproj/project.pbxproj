@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8B8647162295FE21008E62E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8647152295FE21008E62E8 /* AppDelegate.swift */; };
-		8B8647182295FE21008E62E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8647172295FE21008E62E8 /* ViewController.swift */; };
+		8B8647182295FE21008E62E8 /* LandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8647172295FE21008E62E8 /* LandingsViewController.swift */; };
 		8B86471B2295FE21008E62E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8647192295FE21008E62E8 /* Main.storyboard */; };
 		8B86471D2295FE22008E62E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B86471C2295FE22008E62E8 /* Assets.xcassets */; };
 		8B8647202295FE22008E62E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B86471E2295FE22008E62E8 /* LaunchScreen.storyboard */; };
+		8B8647282295FE48008E62E8 /* meteorite-landings.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B8647272295FE48008E62E8 /* meteorite-landings.json */; };
+		8B86472A22960183008E62E8 /* MeteoriteLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86472922960183008E62E8 /* MeteoriteLanding.swift */; };
+		8B86472C2296028B008E62E8 /* Geolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86472B2296028B008E62E8 /* Geolocation.swift */; };
+		8B86473022960946008E62E8 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B86472F22960946008E62E8 /* LandingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B8647122295FE21008E62E8 /* Meteorite Landings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meteorite Landings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8647152295FE21008E62E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B8647172295FE21008E62E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B8647172295FE21008E62E8 /* LandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingsViewController.swift; sourceTree = "<group>"; };
 		8B86471A2295FE21008E62E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B86471C2295FE22008E62E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B86471F2295FE22008E62E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B8647212295FE22008E62E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B8647272295FE48008E62E8 /* meteorite-landings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "meteorite-landings.json"; sourceTree = "<group>"; };
+		8B86472922960183008E62E8 /* MeteoriteLanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteLanding.swift; sourceTree = "<group>"; };
+		8B86472B2296028B008E62E8 /* Geolocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geolocation.swift; sourceTree = "<group>"; };
+		8B86472F22960946008E62E8 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,33 @@
 			isa = PBXGroup;
 			children = (
 				8B8647152295FE21008E62E8 /* AppDelegate.swift */,
-				8B8647172295FE21008E62E8 /* ViewController.swift */,
+				8B86473222961AF5008E62E8 /* Controllers */,
+				8B86473122961AE7008E62E8 /* Models */,
+				8B8647272295FE48008E62E8 /* meteorite-landings.json */,
 				8B8647192295FE21008E62E8 /* Main.storyboard */,
 				8B86471C2295FE22008E62E8 /* Assets.xcassets */,
 				8B86471E2295FE22008E62E8 /* LaunchScreen.storyboard */,
 				8B8647212295FE22008E62E8 /* Info.plist */,
 			);
 			path = "Meteorite Landings";
+			sourceTree = "<group>";
+		};
+		8B86473122961AE7008E62E8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B86472922960183008E62E8 /* MeteoriteLanding.swift */,
+				8B86472B2296028B008E62E8 /* Geolocation.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8B86473222961AF5008E62E8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8B8647172295FE21008E62E8 /* LandingsViewController.swift */,
+				8B86472F22960946008E62E8 /* LandingViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +152,7 @@
 			files = (
 				8B8647202295FE22008E62E8 /* LaunchScreen.storyboard in Resources */,
 				8B86471D2295FE22008E62E8 /* Assets.xcassets in Resources */,
+				8B8647282295FE48008E62E8 /* meteorite-landings.json in Resources */,
 				8B86471B2295FE21008E62E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B8647182295FE21008E62E8 /* ViewController.swift in Sources */,
+				8B86472C2296028B008E62E8 /* Geolocation.swift in Sources */,
+				8B8647182295FE21008E62E8 /* LandingsViewController.swift in Sources */,
 				8B8647162295FE21008E62E8 /* AppDelegate.swift in Sources */,
+				8B86473022960946008E62E8 /* LandingViewController.swift in Sources */,
+				8B86472A22960183008E62E8 /* MeteoriteLanding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
